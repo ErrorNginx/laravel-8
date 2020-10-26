@@ -17,6 +17,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+route::get('/post', function () {
+    return "post page";
+});
+
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
