@@ -7,8 +7,21 @@
                 </g>
             </svg>
         </div>
+        <br>
+        <br>
+
+        <button wire:click="showModal()" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+            Tambah Data
+          </button>
+
+          @if($isOpen)
+                         @include('livewire.create')
+            @endif
+
+          <br>
 
         <div class="mt-8 bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg">
+
 
             <table class="table-fixed w-full">
                 <thead class="bg-gray-500">
@@ -24,11 +37,16 @@
 
                 <tbody>
 
+                    @foreach ($posts as $post)
+
+
                     <tr>
 
-                        <td>1</td>
-                        <td>Berita terbaru</td>
-                        <td>Jakarta PSBB</td>
+                        <td>{{ $post->id }}</td>
+                        <td>{{ $post->title }}</td>
+                        <td>{{ $post->description }}</td>
+
+
                         <td>
                             <button class="bg-transparent hover:bg-gray-500 text-gray-700 font-semibold hover:text-white py-2 px-4 border border-gray-500 hover:border-transparent rounded">
                             Edit
@@ -43,43 +61,8 @@
 
                     </tr>
 
-                    <tr>
 
-                        <td>1</td>
-                        <td>Berita terbaru</td>
-                        <td>Jakarta PSBB</td>
-                        <td>
-                            <button class="bg-transparent hover:bg-gray-500 text-gray-700 font-semibold hover:text-white py-2 px-4 border border-gray-500 hover:border-transparent rounded">
-                            Edit
-                            </button>
-
-
-                            <button class="bg-transparent hover:bg-gray-500 text-gray-700 font-semibold hover:text-white py-2 px-4 border border-gray-500 hover:border-transparent rounded">
-                            Delete
-                            </button>
-                        </td>
-
-
-                    </tr>
-
-                    <tr>
-
-                        <td>1</td>
-                        <td>Berita terbaru</td>
-                        <td>Jakarta PSBB</td>
-                        <td>
-                            <button class="bg-transparent hover:bg-gray-500 text-gray-700 font-semibold hover:text-white py-2 px-4 border border-gray-500 hover:border-transparent rounded">
-                            Edit
-                            </button>
-
-
-                            <button class="bg-transparent hover:bg-gray-500 text-gray-700 font-semibold hover:text-white py-2 px-4 border border-gray-500 hover:border-transparent rounded">
-                            Delete
-                            </button>
-                        </td>
-
-
-                    </tr>
+                    @endforeach
                 </tbody>
 
 
