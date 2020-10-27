@@ -1,7 +1,4 @@
 <div>
-
-
-
     <div class="max-w-6xl mx-auto sm:px-6 lg:px-8 mt-10">
         <div class="flex justify-center pt-8 sm:justify-start sm:pt-0">
             <svg viewBox="0 0 651 192" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-16 w-auto text-gray-700 sm:h-20">
@@ -12,10 +9,83 @@
         </div>
 
         <div class="mt-8 bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg">
-            <h1>
 
-                agus mahari
-            </h1>
+            <table class="table-fixed w-full">
+                <thead class="bg-gray-500">
+
+                    <tr>
+
+                        <th class="px-4 py-2 text-white" >No</th>
+                        <th class="px-4 py-2 text-white">Title</th>
+                        <th class="px-4 py-2 text-white">Description</th>
+                        <th class="px-4 py-2 text-white">Action</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td>1</td>
+                        <td>Berita terbaru</td>
+                        <td>Jakarta PSBB</td>
+                        <td>
+                            <button class="bg-transparent hover:bg-gray-500 text-gray-700 font-semibold hover:text-white py-2 px-4 border border-gray-500 hover:border-transparent rounded">
+                            Edit
+                            </button>
+
+
+                            <button class="bg-transparent hover:bg-gray-500 text-gray-700 font-semibold hover:text-white py-2 px-4 border border-gray-500 hover:border-transparent rounded">
+                            Delete
+                            </button>
+                        </td>
+
+
+                    </tr>
+
+                    <tr>
+
+                        <td>1</td>
+                        <td>Berita terbaru</td>
+                        <td>Jakarta PSBB</td>
+                        <td>
+                            <button class="bg-transparent hover:bg-gray-500 text-gray-700 font-semibold hover:text-white py-2 px-4 border border-gray-500 hover:border-transparent rounded">
+                            Edit
+                            </button>
+
+
+                            <button class="bg-transparent hover:bg-gray-500 text-gray-700 font-semibold hover:text-white py-2 px-4 border border-gray-500 hover:border-transparent rounded">
+                            Delete
+                            </button>
+                        </td>
+
+
+                    </tr>
+
+                    <tr>
+
+                        <td>1</td>
+                        <td>Berita terbaru</td>
+                        <td>Jakarta PSBB</td>
+                        <td>
+                            <button class="bg-transparent hover:bg-gray-500 text-gray-700 font-semibold hover:text-white py-2 px-4 border border-gray-500 hover:border-transparent rounded">
+                            Edit
+                            </button>
+
+
+                            <button class="bg-transparent hover:bg-gray-500 text-gray-700 font-semibold hover:text-white py-2 px-4 border border-gray-500 hover:border-transparent rounded">
+                            Delete
+                            </button>
+                        </td>
+
+
+                    </tr>
+                </tbody>
+
+
+
+            </table>
+
         </div>
 
         <div class="flex justify-center mt-4 sm:items-center sm:justify-between">
